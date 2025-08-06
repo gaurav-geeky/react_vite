@@ -10,61 +10,78 @@ function Home() {
     <>
       <header>
 
-
         <section className=" flex justify-between items-center  border-1 bg-blue-300">
 
-          <Link className=" text-5xl text-center font-bold grow-1 bg-yellow-300 border-1 w-10 p-1 " to="/home">  Outfit</Link> &ensp; 
+          <Link className=" text-5xl text-center font-bold grow-1 bg-yellow-300 border-1 w-10 p-1 " to="/home">  Outfit</Link> &ensp;
 
           <nav className=" text-2xl flex items-center justify-evenly pl-100  bg-blue-400  grow-3  " >
-            <Link className=" border-r-1" to="/new">  New &ensp;   </Link>  
-            <Link className=" border-r-1" to="/women">  Women &ensp;  </Link>   
-            <Link className=" border-r-1" to="/men">  Men &ensp; </Link>   
-            <p className=" flex text-xl items-center  ">  <CgProfile /> 
-             Login  &ensp; <p className=" text-2xl "> < FaShoppingCart /> </p> &ensp; 
-            </p>   
-            
+            <Link className=" border-r-1" to="/new">  New &ensp;   </Link>
+            <Link className=" border-r-1" to="/women">  Women &ensp;  </Link>
+            <Link className=" border-r-1" to="/men">  Men &ensp; </Link>
+            <p className=" flex text-xl items-center  ">  <CgProfile />
+              Login  &ensp; <p className=" text-2xl "> < FaShoppingCart /> </p> &ensp;
+            </p>
           </nav>
 
         </section>
 
-
       </header>
 
-      <section className=' w-full h-163   '>
-
-        <div className='text-center flex flex-col items-center border-1 p-4'>
-          <p className=' hover:bg-yellow-200  text-5xl font-bold '> Outfit </p>
-          <p className='text-2xl bg-green-200 w-100 '> There's One for Everyone </p>
-        </div>
-        <div className='flex justify-evenly items-center border-1 p-2'>
-          <img className=' h-110 w-auto ' src="women.png" alt="pic" />
-          <img className=' h-110 w-auto ' src="new cloth.png" alt="pic" />
-          <img className=' h-110 w-auto ' src="men.png" alt="pic" />
-        </div>
+      <section className=' w-full h-auto   '>
 
         <article>
-          <p> New Drops </p>
-
-          <div>
-
+          <div className='text-center flex flex-col items-center border-1 p-4'>
+            <p className=' hover:bg-yellow-200  text-5xl font-bold '> Outfit </p>
+            <p className='text-2xl bg-green-200 w-100 '> There's One for Everyone </p>
           </div>
-
+          <div className='flex justify-evenly items-center border-1 p-2'>
+            <img className=' h-110 w-auto ' src="women.png" alt="pic" />
+            <img className=' h-110 w-auto ' src="new cloth.png" alt="pic" />
+            <img className=' h-110 w-auto ' src="men.png" alt="pic" />
+          </div>
         </article>
 
 
+        <article className=" w-full h-auto border-1 ">
+          <p className="p-4 text-3xl text-center font-bold"> Our latest t-shirt collections </p>
+
+          <div className=" grid grid-cols-4 place-items-center gap-3 ">
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh1.png" alt="pic" /> Reebok blue t-shirt 
+            <br /> ₹ 459.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh2.png" alt="pic" /> Monte Carlo men t-shirt 
+            <br /> ₹ 555.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh3.png" alt="pic" /> Men Puma slim fit t-shirt 
+            <br /> ₹ 653.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh4.png" alt="pic" /> Nike t-shirt 
+            <br /> ₹ 250.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh5.png" alt="pic" /> H&M t-shirt 
+            <br /> ₹ 322.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh6.png" alt="pic" /> Tommy Hilfiger Polyester t-shirt 
+            <br /> ₹ 459.00 </p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh7.png" alt="pic" /> Adidas t-shirt 
+            <br /> ₹ 329.00</p>
+            <p className=" h-130 w-80 "> <img className=" h-auto w-80 " src="../tshirt/tsh8.png" alt="pic" /> Reebok t-shirt 
+            <br /> ₹ 299.00 </p>
+            
+          </div>
+
+
+        </article>
+
       </section>
 
-      <footer className=" w-full h-auto  ">
+
+      <footer className=" w-full h-auto mt-4 ">
 
         <section className=' flex  text-center  border-1  '>
-          <article className='  bg-black text-white  grow-1 pt-15 pb-15 w-50   '>
+          <article className='  bg-black text-white  grow-1 p-5 pt-10 pb-10 w-50    '>
             <p className=' font-bold text-2xl/15   '> Outfit </p>
             <p> outfit@cloth.com </p>
             <p className=' '> Tel: 123-456-7899 </p>
             <p > Registered Office: Outfit Ltd, 319, Vasant Vihar, Phase II, Delhi - 110057. </p>
           </article>
 
-          <section className=' flex  bg-amber-200 grow-3  '>
+          <section className=' flex  grow-3  '>
             <article className='  grow-1 text-center  pt-10 pb-10 '>
               <div className=' text-lg/15  font-semibold  ' > Shop </div>
               <div>New</div>

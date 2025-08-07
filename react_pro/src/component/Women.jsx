@@ -1,4 +1,5 @@
-import React from 'react'
+
+import { Link } from 'react-router-dom'
 
 function Women() {
   return (
@@ -7,10 +8,10 @@ function Women() {
         <aside className=' grow-1 border-1 p-10 '>
             <div className=' text-3xl font-serif leading-15 '> Browse by </div> 
             <hr /> 
-            <div className=' text-lg/10 ' > All products </div> 
-            <div className=' text-lg/10 ' > Men </div> 
-            <div className=' text-lg/10 ' > New Drops </div> 
-            <div className=' text-lg/10 ' > Women </div> 
+            <Link to="/" > <div className=' text-lg/10 ' > All products </div>  </Link>
+            <Link to="/men" > <div className=' text-lg/10 ' > Men </div>  </Link> 
+            <Link to="/new" > <div className=' text-lg/10 ' > New Drops </div> </Link> 
+            <Link to="/women" > <div className=' text-lg/10 ' > Women </div>  </Link>
         </aside> 
 
         <article className=" grid grid-cols-3 place-items-center gap-3 grow-7 border-1 p-5  " >

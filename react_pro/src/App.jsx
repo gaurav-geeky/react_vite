@@ -4,9 +4,12 @@ import './App.css'
 
 import Home from './component/Home'
 import Men from './component/Men'
-import Women from './component/Women'
+import Women from './component/Women' 
+import New from './component/New'
+
 import { Route, Routes } from 'react-router-dom'
 import Layout from './component/Layout'
+
 
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/men" element={<Men />} />
             <Route path="/women" element={<Women />} />
+            <Route path="/new" element={<New />} />
 
           </Route>
 

@@ -11,11 +11,11 @@ function Layout() {
 
             <header>
 
-                <section className=" flex justify-between items-center  border-1 bg-blue-400 ">
+                <section className=" flex justify-between items-center  border-1 bg-indigo-400 ">
 
                     <Link className=" text-5xl text-center font-bold grow-1 bg-yellow-300 border-1 w-10 p-1 " to="/">  Outfit</Link> &ensp;
 
-                    <nav className=" text-2xl flex items-center justify-evenly pl-100  bg-blue-400  grow-3  " >
+                    <nav className=" text-2xl flex items-center justify-evenly pl-100  bg-indigo-400  grow-3  " >
                         <Link className=" border-r-1" to="/new" >  New &ensp;   </Link>
                         <Link className=" border-r-1" to="/women">  Women &ensp;  </Link>
                         <Link className=" border-r-1" to="/men">  Men &ensp; </Link>

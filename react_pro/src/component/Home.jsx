@@ -25,7 +25,7 @@ function Home() {
         </article>
 
 
-        <article id="coll" className=" w-full h-auto  pt-4 pb-4">
+        <article className=" w-full h-auto  pt-4 pb-4">
           <p className="p-4 text-3xl text-center font-bold"> Our latest t-shirt collections </p>
 
           <div className=" grid grid-cols-4 place-items-center gap-3 gap-y-6    ">
@@ -56,6 +56,22 @@ function Home() {
 
           </div>
 
+        </article>
+
+
+
+        <article className=" w-full h-auto pt-4 pb-4  bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600 ">
+          <p className="p-4 text-3xl text-center font-bold"> Famous clothing brands </p>
+
+          <div className=" flex justify-around items-center  ">
+
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b1.png" alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b2.png" alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b3.png" alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b4.png" alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b5.png" alt="pic" />  </p>
+
+          </div>
 
         </article>
 

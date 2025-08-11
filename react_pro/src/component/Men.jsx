@@ -16,16 +16,22 @@ function Men() {
         </aside> 
 
         <article className=" grid grid-cols-3 place-items-center gap-3 grow-7 border-1 p-5  " >
+
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m1.png" alt="pic" /> gray t-shirt 
             <br /> ₹ 999.00 </p> 
+
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m2.png" alt="pic" /> purple t-shirt 
             <br /> ₹ 555.00 </p> 
+            
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m3.png" alt="pic" /> White t-shirt 
-            <br /> ₹ 450.00 </p> 
+            <br /> ₹ 450.00 </p>
+            
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m4.png" alt="pic" /> tommy hilfiger t-shirt 
             <br /> ₹ 350.00 </p> 
+
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m5.png" alt="pic" /> latest t-shirt 
             <br /> ₹ 300.00 </p> 
+            
             <p className=" h-100 w-70 "> <img className=" h-90 w-70 " src="../cloth/m6.png" alt="pic" /> Harrow t-shirt 
             <br /> ₹ 249.00 </p> 
             

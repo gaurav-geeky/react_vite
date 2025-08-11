@@ -1,7 +1,7 @@
 
 import { Link, Outlet } from "react-router-dom"
 import { BiLogoFacebookCircle, BiLogoTwitter, BiLogoGooglePlus, BiLogoPinterestAlt, BiLogoYoutube, BiLogoWhatsapp } from "react-icons/bi"; 
-import { FaShoppingCart } from "react-icons/fa";
+// import { FaShoppingCart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg"; 
 
 function Layout() {
@@ -18,10 +18,19 @@ function Layout() {
                     <nav className=" text-2xl flex items-center justify-evenly pl-100  bg-indigo-400  grow-3  " >
                         <Link className=" border-r-1" to="/new" >  New &ensp;   </Link>
                         <Link className=" border-r-1" to="/women">  Women &ensp;  </Link>
-                        <Link className=" border-r-1" to="/men">  Men &ensp; </Link>
+                        <Link className=" border-r-1" to="/men">  Men &ensp; </Link> 
+
+                        <Link className=" border-r-1" to="/sign"> 
+                        <p className=" flex text-xl items-center  "> 
+                            Sign-up  &ensp; <p className=" text-2xl ">  </p> &ensp; 
+                        </p> 
+                        </Link>
+
+                        <Link className=" border-r-1" to="/login"> 
                         <p className=" flex text-xl items-center  ">  <CgProfile /> &nbsp;
-                            Login  &ensp; <p className=" text-2xl "> < FaShoppingCart /> </p> &ensp; 
+                            Login  &ensp; <p className=" text-2xl ">  </p> &ensp; 
                         </p>
+                        </Link>
                     </nav>
 
                 </section>
@@ -30,7 +39,7 @@ function Layout() {
 
             <Outlet />
 
-            <footer className=" w-full h-auto mt-4 ">
+            <footer className=" w-full h-auto mt-1 ">
             
                     <section className=' flex  text-center  border-1  '>
                       <article className='  bg-black text-white  grow-1 p-5 pt-10 pb-10 w-50    '>

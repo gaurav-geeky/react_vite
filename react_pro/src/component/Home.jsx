@@ -18,7 +18,8 @@ function Home() {
             <p className='text-2xl bg-green-200 w-100 '> There's One for Everyone </p>
           </div>
           <div className='flex justify-evenly items-center border-1 p-2'>
-            <img className=' h-110 w-auto ' src="women.png" alt="pic" />
+            <img className=' h-110 w-auto ' 
+            src="women.png" alt="pic" />
             <img className=' h-110 w-auto ' src="new cloth.png" alt="pic" />
             <img className=' h-110 w-auto ' src="men.png" alt="pic" />
           </div>
@@ -89,3 +90,9 @@ export default Home
 
 
 //               https://www.wix.com/website-template/view/html/2936?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fonline-store%2Ffashion-clothing&tpClick=view_button&esi=ec8897f2-1ffe-4f52-9a41-1c9e197c94a6#
+
+
+
+
+
+

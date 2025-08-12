@@ -59,9 +59,9 @@ function Signform() {
 
     return (
         <>
-            <section className=" w-full h-100  flex justify-around items-center bg-[url(../tshirt/bgsign.jpg)] bg-no-repeat bg-cover"> 
+            <section className=" w-full h-150  flex justify-around items-center bg-[url(../cloth/bgsign.png)] bg-no-repeat bg-cover"> 
 
-                <h1 className=" text-3xl p-3 font-black text-black  "> Sign-up here</h1>
+                <h1 className=" text-3xl p-3 font-black text-white  "> Sign-up here</h1>
 
                 <form className=" w-150 p-3 pl-9 text-1xl rounded-3xl border-none bg-emerald-100 " onSubmit={handleSubmit}>
 
@@ -77,7 +77,7 @@ function Signform() {
                     <label htmlFor="">Password</label> &ensp;
                     <input className=" border-1 p-1 " type="text" name="password" onChange={handleInput} /> <br /> <br />
 
-                    <input className=" border-1 rounded-lg p-1 bg-blue-600 text-white" type="submit" />
+                    <input className=" border-1 rounded-full p-1 bg-blue-600 text-white w-20" type="submit" />
 
                     <ToastContainer theme="dark" />
                 </form>

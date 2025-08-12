@@ -52,7 +52,7 @@ function Login() {
 
     return (
         <>
-            <section className=" w-full h-100 bg-[url(../tshirt/bglogin.png)] flex flex-col items-center ">
+            <section className=" w-full h-150 bg-[url(../cloth/loginbg_b.jpg)] bg-cover bg-no-repeat flex flex-col items-center gap-y-5">
                 <h1 className=" text-white text-3xl p-3 font-black "> Login page</h1>
 
                 <form className=" border-1 w-150 p-3  bg-blue-200 rounded-2xl border-none  " onSubmit={handleSubmit}>
@@ -62,14 +62,14 @@ function Login() {
 
                     <label htmlFor="">Mobile</label> &ensp;
                     <input className=" border-1 p-1 " type="text" name="mobile" onChange={handleInput} /> <br /> <br />
-
+                    
                     <input className=" border-1 rounded-full p-1 bg-pink-600 text-white w-20" type="submit" />
 
                     <ToastContainer theme="dark" />
                 </form>
 
-            </section>
-
+            </section> 
+            
         </>
     )
 }

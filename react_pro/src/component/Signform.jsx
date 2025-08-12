@@ -59,9 +59,9 @@ function Signform() {
 
     return (
         <>
-            <section className=" w-full h-100  flex flex-col items-center bg-[url(../tshirt/bgsign.jpg)] bg-no-repeat bg-cover"> 
+            <section className=" w-full h-100  flex justify-around items-center bg-[url(../tshirt/bgsign.jpg)] bg-no-repeat bg-cover"> 
 
-                <h1 className=" text-2xl p-3 font-black  "> Sign-up here</h1>
+                <h1 className=" text-3xl p-3 font-black text-black  "> Sign-up here</h1>
 
                 <form className=" w-150 p-3 pl-9 text-1xl rounded-3xl border-none bg-emerald-100 " onSubmit={handleSubmit}>
 

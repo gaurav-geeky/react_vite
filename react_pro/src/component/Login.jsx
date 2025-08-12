@@ -39,12 +39,13 @@ function Login() {
             toast.warning("Please enter valid Number ");
         }
 
-
-        if (loginfrm.email != sign.email || loginfrm.mobile != sign.mobile) {
+        else if (loginfrm.email != sign.email || loginfrm.mobile != sign.mobile) {
             toast.warning(" User not found !");
-            move('/')
         }
 
+        else if (loginfrm.email == sign.email || loginfrm.mobile == sign.mobile) {
+            move('/');
+        }
 
     }
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
 
@@ -49,27 +49,35 @@ function Login() {
 
     }
 
-
     return (
         <>
-            <section className=" w-full h-150 bg-[url(../cloth/loginbg_b.jpg)] bg-cover bg-no-repeat flex flex-col items-center gap-y-5">
-                <h1 className=" text-white text-3xl p-3 font-black "> Login page</h1>
 
-                <form className=" border-1 w-150 p-3  bg-blue-200 rounded-2xl border-none  " onSubmit={handleSubmit}>
+            <section className=" w-full h-150 bg-[url(../cloth/bg_log.png)] bg-cover bg-no-repeat flex flex-col items-center gap-y-5 ">
+                <h1 className=" text-blue-600 text-3xl p-3 font-black "> Login page</h1>
+
+                <form className=" border-2 w-130 h-auto p-3 rounded-2xl font-bold " onSubmit={handleSubmit}>
 
                     <label htmlFor="">Email</label> &ensp;
-                    <input className=" border-1 p-1 " type="text" name="email" onChange={handleInput} /> <br /> <br />
+                    <input className=" border-1  p-1 w-100 font-normal " type="text" name="email" onChange={handleInput} /> <br /> <br />
 
                     <label htmlFor="">Mobile</label> &ensp;
-                    <input className=" border-1 p-1 " type="text" name="mobile" onChange={handleInput} /> <br /> <br />
-                    
-                    <input className=" border-1 rounded-full p-1 bg-pink-600 text-white w-20" type="submit" />
+                    <input className=" border-1 p-1 w-100 font-normal " type="text" name="mobile" onChange={handleInput} /> <br /> <br />
+
+                    <div className="flex justify-start items-center">
+
+                        <input className=" border-1 rounded-full p-1 bg-pink-600 text-white w-30" type="submit" />
+
+                        <h1 className="text-black"> &emsp; &emsp; first time user! &ensp; </h1>
+
+                        <Link to="/sign">
+                            <h1 className="border-1 border-black bg-black text-white p-1 pl-5 pr-5  ">   sign up  </h1>
+                        </Link>
+                    </div>
 
                     <ToastContainer theme="dark" />
                 </form>
+            </section>
 
-            </section> 
-            
         </>
     )
 }

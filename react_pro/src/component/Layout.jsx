@@ -1,15 +1,20 @@
 
 import { Link, Outlet } from "react-router-dom"
 import { BiLogoFacebookCircle, BiLogoTwitter, BiLogoGooglePlus, BiLogoPinterestAlt, BiLogoYoutube, BiLogoWhatsapp } from "react-icons/bi";
-// import { FaShoppingCart } from "react-icons/fa";
-import { CgProfile } from "react-icons/cg";
+import { FaShoppingCart } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg"; 
+
+import { useSelector } from "react-redux";
+
 
 function Layout() {
+
+  let cartItems = useSelector( (item) => item.tray.trayItems) 
 
   return (
     <>
 
-      <header>
+      <header className=" ">
 
         <section className=" flex justify-between items-center  border-1 bg-indigo-400 ">
 
@@ -20,7 +25,16 @@ function Layout() {
             <Link className=" border-r-1" to="/women">  Women &ensp;  </Link>
             <Link className=" border-r-1" to="/men">  Men &ensp; </Link>
 
-            <Link className=" border-r-1" to="/login"> Login &ensp; </Link>
+            <p className=" border-r-1 flex items-center">
+              <Link to="/login"> Login &nbsp; </Link> 
+              <Link to="/login"> <CgProfile /> </Link>  &ensp;
+            </p>
+
+            <p className=" flex items-center">
+              <Link to="/cart"> Cart &ensp; </Link>     
+              <Link to="/cart" > <FaShoppingCart />  </Link>  
+              - {cartItems.length} &ensp;
+            </p>
 
 
           </nav>

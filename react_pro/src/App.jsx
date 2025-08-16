@@ -12,14 +12,14 @@ import Layout from './component/Layout'
 
 import Signform from './component/Signform'
 import Login from './component/Login'
-
+import Showcart from './component/Showcart'
 
 
 function App() {
 
   return (
     <>
-      <h1> app jsx in react project . </h1>
+      {/* <h1> app jsx in react project . </h1> */}
 
       <Routes>
 
@@ -31,6 +31,7 @@ function App() {
           <Route path="/new" element={<New />} />
           <Route path="/sign" element={<Signform />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Showcart />} />
 
         </Route>
 

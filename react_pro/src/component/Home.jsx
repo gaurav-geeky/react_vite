@@ -32,13 +32,13 @@ function Home() {
     { pid: 8, pname: "Reebok t-shirt", pimg: im8, pprice: 299.00 },
   ]
 
-  let dispath = useDispatch() 
+  let dispath = useDispatch()
 
-  let handleCart = (e)=> {
-    dispath(additem(e)) 
-    
+  let handleCart = (e) => {
+    dispath(additem(e))
+
   }
-  
+
 
   return (
     <>
@@ -67,28 +67,28 @@ function Home() {
           <div className=" grid grid-cols-4 place-items-center gap-3 gap-y-6  ">
             {
               ProductList.map((e) => (
-                <div>
-                  <h1 className=" h-125 w-80 hover:scale-105 hover:bg-amber-200 transform duration-300 ease-in-out ">
-                    <img className=" h-auto w-80 " src={e.pimg} alt="pic" />
 
-                    <p> {e.pname} </p>
+                <div className=" h-125 w-80 hover:scale-105 hover:bg-amber-200 transform duration-300 ease-in-out ">
+                  <img className=" h-auto w-80 " src={e.pimg} alt="pic" />
 
-                    <h2 className=' flex justify-between p-1'>
+                  <p> {e.pname} </p>
 
-                      <p className=' font-bold text-2xl'> ₹ {e.pprice} </p>
+                  <h2 className=' flex justify-between p-1'>
 
-                      <button className=' p-1 bg-red-500 hover:bg-blue-400  text-white font-bold ' onClick={() => handleCart(e)}>Add to Cart</button>
-                    </h2>
+                    <p className=' font-bold text-2xl'> ₹ {e.pprice} </p>
 
-                  </h1>
+                    <button className=' p-1 bg-red-500 hover:bg-blue-400  text-white font-bold ' onClick={() => handleCart(e)}>Add to Cart</button>
+                  </h2>
+
                 </div>
+
               ))
             }
           </div>
 
         </article>
 
-
+        {/*  brand section  */}  
 
         <article className=" w-full h-auto pt-4 pb-4  bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600 ">
           <p className="p-4 text-3xl text-center font-bold"> Famous clothing brands </p>

@@ -11,7 +11,8 @@ let Cartslice = createSlice({
     reducers: {
         additem: (state, action) => {
             state.trayItems.push(action.payload)
-        }
+        }, 
+        
     }
 })
 

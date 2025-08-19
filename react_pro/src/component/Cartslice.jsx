@@ -31,11 +31,15 @@ let Cartslice = createSlice({
             else if (exist && exist.quantity == 1) {
                 state.trayItems = state.trayItems.filter((i) => i.pid !== action.payload);
             }
+        },
+        deleteitem: (state, action) => {
+            // Remove item where pid equals the passed payload (payload should be the pid)
+            state.trayItems = state.trayItems.filter((item) => item.pid !== action.payload);
         }
     }
 })
 
-export const { additem, increaseQty, decreaseQty } = Cartslice.actions
+export const { additem, increaseQty, decreaseQty, deleteitem } = Cartslice.actions
 export default Cartslice.reducer
 
 

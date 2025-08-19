@@ -2,11 +2,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
-import { increaseQty, decreaseQty } from "./Cartslice";
-
+import { increaseQty, decreaseQty, deleteitem } from "./Cartslice";  
 
 function Showcart() {
-
 
     let cartItems = useSelector((item) => item.tray.trayItems);
     const dispatch = useDispatch();
@@ -57,7 +55,9 @@ function Showcart() {
                                             <button onClick={() => dispatch(increaseQty(item.pid))}> <CiCirclePlus /> </button>
                                         </div>
 
-                                        <p> Total ₹ {item.quantity * item.pprice}  </p>
+                                        <p> Total ₹ {item.quantity * item.pprice}  </p> 
+
+                                        <button className=" border-1 border-blue-600 bg-blue-600 text-white " onClick={()=> dispatch(deleteitem(item.pid))}>delete</button>
                                     </div>
                                 </div>
                             ))

@@ -17,7 +17,7 @@ function Women() {
 
     { pid: 2, pname: "white t-shirt", pimg: im2, pprice: 222.00 },
 
-    { pid: 3, pname: "Elichie t-shirt", pimg: im3, pprice: 350.00 },
+    { pid: 3, pname: "green t-shirt", pimg: im3, pprice: 350.00 },
 
     { pid: 4, pname: "sky blue t-shirt", pimg: im4, pprice: 411.00 },
 

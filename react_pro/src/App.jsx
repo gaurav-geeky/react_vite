@@ -12,7 +12,11 @@ import Layout from './component/Layout'
 
 import Signform from './component/Signform'
 import Login from './component/Login'
-import Showcart from './component/Showcart'
+import Showcart from './component/Showcart' 
+
+import Address from './component/Address'
+import Apidata from './component/Apidata'
+Apidata
 
 
 function App() {
@@ -32,6 +36,10 @@ function App() {
           <Route path="/sign" element={<Signform />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Showcart />} />
+
+          <Route path="/address" element={<Address />} /> 
+          <Route path="/apidata" element={<Apidata />} /> 
+
 
         </Route>
 

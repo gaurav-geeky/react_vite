@@ -2,28 +2,41 @@
 import { useDispatch, useSelector } from "react-redux";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
-import { increaseQty, decreaseQty, deleteitem } from "./Cartslice";  
+import { increaseQty, decreaseQty, deleteitem } from "./Cartslice";
+import { useNavigate } from 'react-router-dom' 
+
 
 function Showcart() {
 
     let cartItems = useSelector((item) => item.tray.trayItems);
     const dispatch = useDispatch();
 
-
     let Total = () => {
         let totalP = 0;
         let totalQ = 0;
-        let totalD = 0; 
 
         cartItems.forEach((box) => {
             totalQ += box.quantity;
-            totalP += box.quantity * box.pprice; 
+            totalP += box.quantity * box.pprice;
         });
 
         return { totalP, totalQ };
     };
 
-    let { totalP, totalQ } = Total();
+    let { totalP, totalQ } = Total(); 
+
+    let nav = useNavigate(); 
+
+    let detail = {
+        tp: totalP, 
+        tq: totalQ 
+    }
+    
+    function handelbuy() {
+        localStorage.setItem("Proinfo", JSON.stringify(detail))
+
+        nav('/address') 
+    }
 
     return (
         <>
@@ -38,7 +51,7 @@ function Showcart() {
                     <article className="  grow-5  grid grid-cols-1 place-items-center gap-y-5   ">
                         {
                             cartItems.map((item) => (
-                                <div className=" h-80 w-150 rounded-tr-3xl rounded-bl-3xl  flex justify-evenly items-center border-2 m-1 text-[20px]">
+                                <div className=" bg-green-100 h-80 w-150 rounded-tr-3xl rounded-bl-3xl  flex justify-evenly items-center border-2 m-1 text-[20px]">
 
                                     <img className=" h-70" src={item.pimg} alt="pic" />
 
@@ -55,19 +68,21 @@ function Showcart() {
                                             <button onClick={() => dispatch(increaseQty(item.pid))}> <CiCirclePlus /> </button>
                                         </div>
 
-                                        <p> Total ₹ {item.quantity * item.pprice}  </p> 
+                                        <p> Total ₹ {item.quantity * item.pprice}  </p>
 
-                                        <button className=" border-1 border-blue-600 bg-blue-600 text-white " onClick={()=> dispatch(deleteitem(item.pid))}>delete</button>
+                                        <button className=" border-1 border-blue-600 bg-blue-600 text-white " onClick={() => dispatch(deleteitem(item.pid))}>delete</button>
                                     </div>
                                 </div>
                             ))
                         }
                     </article>
-                    
-                    <article className=" grow-2 h-100 border-1 m-1 p-5 rounded-2xl ">
+
+                    <article  className=" bg-blue-200 grow-2 h-100 border-1 m-1 p-5 rounded-2xl ">
                         <p> total no of items ordered : {totalQ} </p>
-                        <p> Total Amount : {totalP}  </p> 
+                        <p> Total Amount : {totalP}  </p> <br /> 
+                        <button className=" border-1 border-red-500 bg-red-500 text-white font-bold p-1" onClick={() => handelbuy()}> Buy Now </button>
                     </article>
+                    
                 </article>
 
             </section>

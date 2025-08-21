@@ -40,7 +40,7 @@ function Showcart() {
 
     return (
         <>
-            <section>
+            <section className=" bg-gray-200 ">
                 <h1 className="text-3xl bg-amber-100 p-2"> Shopping Cart </h1>
                 <p className=" text-end text-[blue] bg-amber-100 pr-50 font-bold tracking-[.5em]"> TOTAL </p>
 

@@ -52,7 +52,7 @@ function Address() {
                         <input className="border-1 w-100 p-[2px] " type="text" name="email" onChange={handleInput} />  <br /> <br />
 
                         <label htmlFor=" "> Address </label>
-                        <input className="border-1 w-100 p-[2px] " type="text" name="password" onChange={handleInput} />  <br /> <br />
+                        <input className="border-1 w-100 p-[2px] " type="text" name="address" onChange={handleInput} />  <br /> <br />
 
                         <input className=" border-1 border-blue-500 bg-blue-500 text-white font-bold p-1 rounded-[10px]" type="submit" /> 
 

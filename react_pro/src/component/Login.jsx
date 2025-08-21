@@ -52,7 +52,7 @@ function Login() {
     return (
         <>
 
-            <section className=" w-full h-150 bg-[url(../cloth/bg_log.png)] bg-cover bg-no-repeat flex flex-col items-center gap-y-5 ">
+            <section className=" w-full h-150 bg-[url(./assets/cloth/bg_log.png)] bg-cover bg-no-repeat flex flex-col items-center gap-y-5 ">
                 <h1 className=" text-blue-600 text-3xl p-3 font-black "> Login page</h1>
 
                 <form className=" border-2 w-130 h-auto p-3 rounded-2xl font-bold " onSubmit={handleSubmit}>
@@ -83,3 +83,5 @@ function Login() {
 }
 
 export default Login
+
+

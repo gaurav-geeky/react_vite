@@ -58,7 +58,7 @@ function Signform() {
 
     return (
         <>
-            <section className=" w-full h-150 bg-[url(../cloth/bg_log.png)] flex flex-col items-center gap-y-5 bg-no-repeat bg-cover">
+            <section className=" w-full h-150 bg-[url(./assets/cloth/bg_log.png)] flex flex-col items-center gap-y-5 bg-no-repeat bg-cover">
 
                 <h1 className=" text-3xl p-3 font-black text-blue-600  "> Sign-up here</h1>
 

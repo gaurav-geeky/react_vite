@@ -12,6 +12,7 @@ import { additem } from './Cartslice'
 import { useDispatch } from 'react-redux'
 
 
+
 function Home() {
 
   let ProductList = [

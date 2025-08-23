@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 import { increaseQty, decreaseQty, deleteitem } from "./Cartslice";
-import { useNavigate } from 'react-router-dom' 
+import { useNavigate } from 'react-router-dom'
 
 
 function Showcart() {
@@ -23,19 +23,19 @@ function Showcart() {
         return { totalP, totalQ };
     };
 
-    let { totalP, totalQ } = Total(); 
+    let { totalP, totalQ } = Total();
 
-    let nav = useNavigate(); 
+    let nav = useNavigate();
 
     let detail = {
-        tp: totalP, 
-        tq: totalQ 
+        tp: totalP,
+        tq: totalQ
     }
-    
+
     function handelbuy() {
         localStorage.setItem("Proinfo", JSON.stringify(detail))
 
-        nav('/address') 
+        nav('/address')
     }
 
     return (
@@ -51,7 +51,7 @@ function Showcart() {
                     <article className="  grow-5  grid grid-cols-1 place-items-center gap-y-5   ">
                         {
                             cartItems.map((item) => (
-                                <div className=" bg-green-100 h-80 w-150 rounded-tr-3xl rounded-bl-3xl  flex justify-evenly items-center border-2 m-1 text-[20px]">
+                                <div className=" bg-purple-100 h-80 w-150 rounded-tr-3xl rounded-bl-3xl  flex justify-evenly items-center border-1 m-1 text-[20px]">
 
                                     <img className=" h-70" src={item.pimg} alt="pic" />
 
@@ -75,14 +75,23 @@ function Showcart() {
                                 </div>
                             ))
                         }
+
+                        {totalQ === 0 && (
+                            <div className="min-h-[20em] flex items-center justify-center w-full">
+                                <p className="text-gray-600">Your cart is empty. Buy something 🛒</p>
+                            </div>
+                        )}
+                        {/*  where no item then page must have some min. height  */}
+
                     </article>
 
-                    <article  className=" bg-blue-200 grow-2 h-100 border-1 m-1 p-5 rounded-2xl ">
+                    {totalQ > 0 && (<article className=" bg-blue-200 grow-2 h-40 text-[18px] border-1 m-1 p-5 rounded-2xl ">
                         <p> total no of items ordered : {totalQ} </p>
-                        <p> Total Amount : {totalP}  </p> <br /> 
-                        <button className=" border-1 border-red-500 bg-red-500 text-white font-bold p-1" onClick={() => handelbuy()}> Buy Now </button>
-                    </article>
-                    
+                        <p> Total Amount : {totalP}  </p> <br />
+                        <button className=" border-1 border-red-500 bg-red-500 rounded-[8px] text-white font-bold p-1" onClick={() => handelbuy()}> Buy Now </button>
+                    </article>)}
+                    {/*  where there is item in cart then only  total section visible */}
+
                 </article>
 
             </section>

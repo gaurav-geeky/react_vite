@@ -11,7 +11,11 @@ import im8 from '../assets/tshirt/tsh8.png'
 import { additem } from './Cartslice'
 import { useDispatch } from 'react-redux'
 
-
+import b1 from '../assets/cloth/b1.png'
+import b2 from '../assets/cloth/b2.png'
+import b3 from '../assets/cloth/b3.png'
+import b4 from '../assets/cloth/b4.png'
+import b5 from '../assets/cloth/b5.png'
 
 function Home() {
 
@@ -95,11 +99,11 @@ function Home() {
           <p className="p-4 text-3xl text-center font-bold"> Famous clothing brands </p>
 
           <div className=" flex justify-around items-center  ">
-            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b1.png" alt="pic" />  </p>
-            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b2.png" alt="pic" />  </p>
-            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b3.png" alt="pic" />  </p>
-            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b4.png" alt="pic" />  </p>
-            <p className="  "> <img className=" h-auto w-50 rounded-full  " src="../cloth/b5.png" alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src={b1} alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src={b2} alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src={b3} alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src={b4} alt="pic" />  </p>
+            <p className="  "> <img className=" h-auto w-50 rounded-full  " src={b5} alt="pic" />  </p>
           </div>
 
         </article>

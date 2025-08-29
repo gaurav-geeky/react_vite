@@ -20,7 +20,7 @@ function Address() {
     function handleInput(e) {
         let { name, value } = e.target
         setFrmdata({ ...frmdata, [name]: value })
-    }
+    }; 
 
     let move = useNavigate()  
 
@@ -33,7 +33,7 @@ function Address() {
         .catch( (err)=> alert(err)) 
         
         move('/apidata')
-    }
+    }; 
 
 
     return (

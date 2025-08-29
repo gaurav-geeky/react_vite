@@ -6,14 +6,12 @@ import { CgProfile } from "react-icons/cg";
 
 import { useSelector } from "react-redux";
 
-
 function Layout() {
 
   let cartItems = useSelector( (item) => item.tray.trayItems) 
 
   return (
     <>
-
       <header className=" ">
 
         <section className=" flex justify-between items-center  border-1 bg-indigo-400 ">

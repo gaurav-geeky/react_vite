@@ -90,6 +90,7 @@ function Showcart() {
                         <p> Total Amount : {totalP}  </p> <br />
                         <button className=" border-1 border-red-500 bg-red-500 rounded-[8px] text-white font-bold p-1" onClick={() => handelbuy()}> Buy Now </button>
                     </article>)}
+                    
                     {/*  where there is item in cart then only  total section visible */}
 
                 </article>
@@ -104,7 +105,6 @@ export default Showcart
 
 
 //  grid prop me same line me     grid-cols-2   =>   2 items in a col     place-items-center  =>  justify, align center 
-
 
 
 

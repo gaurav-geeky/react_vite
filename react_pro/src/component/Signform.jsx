@@ -50,11 +50,8 @@ function Signform() {
         ) {
             toast.warning("🚫 please use special chars in Password");
         }
-
         move('/login')
-
     }
-
 
     return (
         <>

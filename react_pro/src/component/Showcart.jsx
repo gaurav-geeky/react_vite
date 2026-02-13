@@ -1,4 +1,6 @@
 
+// total amount page
+
 import { useDispatch, useSelector } from "react-redux";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
